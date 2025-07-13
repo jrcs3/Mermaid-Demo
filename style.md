@@ -2,7 +2,7 @@
 
 ## classDef
 
-``` mermaid
+``` text
 graph TB
   %% Styling
   classDef AyeCD fill: red, color: green, font-weight: bold;
@@ -12,7 +12,7 @@ graph TB
   B:::BeeCD
 ```
 
-::: mermaid
+``` mermaid
 graph TB
   %% Styling
   classDef AyeCD fill: red, color: green, font-weight: bold;
@@ -20,4 +20,4 @@ graph TB
   %% Nodes
   A:::AyeCD
   B:::BeeCD
-:::
+```
