@@ -7,7 +7,7 @@ graph TB
   %% styles
   style A fill:red,color:green,font-weight:bold,stroke:green
   style B fill:yellow,color:black
-  style sg fill: aliceblue,color:darkgreen,stroke:darkblue
+  style sg fill:aliceblue,color:darkgreen,stroke:darkblue
 
   %% Nodes
   subgraph sg[Sub Graph]
@@ -29,20 +29,23 @@ graph TB
   end
   B
 ```
-
+I don't show it here, but you can stack nodes styles. So you can have something like this `style A, B, C fill:##69BE28,color:#002244`.
 ## classDef
-
+This is the first way I discovered to style objects in Mermaid. As I researched styling, I am finding that the other approaches are more
+flexable and easier to use. 
 ``` text
 graph TB
   %% Styling
   classDef AyeCD fill:red,color:green,font-weight:bold,stroke:green
   classDef BeeCD fill:yellow,color:black
-  classDef SgCD fill:aliceblue,color:darkgreen,stroke:darkblue
+  %% subgraph does not support this
+  %%classDef SgCD fill:aliceblue,color:darkgreen,stroke:darkblue
 
   %% Nodes
-  subgraph sg[Sub Graph]:::SgCD
+  %% subgraph does not support this
+  %%subgraph sg:::SgCD
   A:::AyeCD
-  end
+  %%end
   B:::BeeCD
 ```
 
@@ -51,12 +54,14 @@ graph TB
   %% Styling
   classDef AyeCD fill:red,color:green,font-weight:bold,stroke:green
   classDef BeeCD fill:yellow,color:black
-  classDef SgCD fill:aliceblue,color:darkgreen,stroke:darkblue
+  %% subgraph does not support this
+  %%classDef SgCD fill:aliceblue,color:darkgreen,stroke:darkblue
 
   %% Nodes
-  subgraph sg[Sub Graph]:::SgCD
+  %% subgraph does not support this
+  %%subgraph sg:::SgCD
   A:::AyeCD
-  end
+  %%end
   B:::BeeCD
 ```
 
