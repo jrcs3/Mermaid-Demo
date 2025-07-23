@@ -4,6 +4,8 @@
 
 Most of the diagrams I've written are flowchart diagrams. I can stretch visualize most of what I need.
 
+See [Flowchart Syntax | Mermaid](https://mermaid.js.org/syntax/flowchart.html)
+
 ``` text
 flowchart TB
     A((Start)) --> |It is 6 AM| B(Alarm Goes Off)
@@ -26,6 +28,8 @@ flowchart TB
 
 ## sequenceDiagram
 I think I've used this twice in the wild. 
+
+See [Sequence diagrams | Mermaid](https://mermaid.js.org/syntax/sequenceDiagram.html)
 
 ``` text
 sequenceDiagram
@@ -57,6 +61,9 @@ sequenceDiagram
 
 ## stateDiagram-v2
 
+See [Sequence diagrams | Mermaid](https://mermaid.js.org/syntax/stateDiagram.html)
+
+
 ``` text
 stateDiagram-v2
     %% Node Defs
@@ -88,5 +95,49 @@ stateDiagram-v2
     D --> B : 5 minutes<br/>pass
     E --> [*]
 ```
+## erDiagram
+
+```mermaid
+erDiagram
+    direction LR
+    BOOK ||--o{ GENRE : "joined to"
+    BOOK {
+        int id pk
+        int genreId fk
+        nvarchar(255) title
+        nvarchar(255) author
+        int yearPublished
+    }
+    GENRE {
+        int id pk
+        nvarchar(50) name
+    }
+```
+
+See [Entity Relationship Diagrams | Mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+
+## classDiagram
+
+```mermaid
+classDiagram
+    direction LR
+    BOOK <|-- GENRE : joined to
+    class BOOK{
+        int id pk
+        int genreId fk
+        string title
+        string author
+        int yearPublished
+    }
+    class GENRE{
+        int id pk
+        string name
+    }
+
+```
+
+See [Class diagrams | Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
+
+
 
 Back to [main read md](readme.md).
