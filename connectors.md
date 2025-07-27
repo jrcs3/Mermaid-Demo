@@ -41,6 +41,18 @@ flowchart LR
   K[Bold Line]===L[Line] 
   E[Bold Line]<==>F[Two Arrrows]
 ```
+
+### Animated Line
+```text
+flowchart LR
+  A e1@==> B
+  e1@{ animate: true }
+```
+```mermaid
+flowchart LR
+  A e1@==> B
+  e1@{ animate: true }
+```
 ## sequenceDiagram
 See [Messages](https://mermaid.js.org/syntax/sequenceDiagram.html#messages) on the mermaid site.
 
@@ -76,5 +88,5 @@ sequenceDiagram
     me -) world: Solid line with an open arrow at the end (async)
     me --) world:	Dotted line with a open arrow at the end (async)
 ```
-
+---
 Back to [main read md](readme.md).
