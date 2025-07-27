@@ -138,6 +138,4 @@ classDiagram
 
 See [Class diagrams | Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
-
-
 Back to [main read md](readme.md).

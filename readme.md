@@ -6,9 +6,10 @@
 
 [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) is a VS Code extension that supports Mermaid.
 
+- [Types of Diagrams](types-of-diagrams.md)
 - [Shapes](shapes.md)
 - [Connectors](connectors.md)
 - [Styling](style.md)
-- [Types of Diagrams](types-of-diagrams.md)
-- [Trila and Error](Trial-and-error.md)
 - [Compared to Visio](vs-visio.md)
+- [List to Mermaid, a simplfied demo](list-to-mermaid-example.md)
+- [Trila and Error](Trial-and-error.md)
