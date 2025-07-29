@@ -30,4 +30,5 @@ Version-controlled documentation  | ❌           | ✅
 Quick prototyping via code        | ❌           | ✅
 Complex visual formatting         | ✅           | ❌
 
+---
 Back to [main read md](readme.md).
