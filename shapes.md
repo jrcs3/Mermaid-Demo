@@ -78,4 +78,6 @@ flowchart TB
     D(Take a picture without fa:fa-camera-retro)
 ```
 ---
+Next [Connectors](connectors.md)
+
 Back to [main read md](readme.md).

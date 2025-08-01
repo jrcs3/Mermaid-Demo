@@ -17,7 +17,8 @@
 - Can be embedded in Azure Devops WIKI and Github Markdown 
 ### The Bad
 - Less control: There is no way to put an object at a specific location
-- Inconsistancy: Different graph types have different syntax.
+- Inconsistancy: Different graph types have different syntax
+- Larger diagrams can get out of hand
 
 ## When to Use Which? (from Copilot)
 
@@ -31,4 +32,6 @@ Quick prototyping via code        | ❌           | ✅
 Complex visual formatting         | ✅           | ❌
 
 ---
+Next [Types of Diagrams](types-of-diagrams.md)
+
 Back to [main read md](readme.md).

@@ -1,5 +1,7 @@
 # Types of Diagrams
 
+[Mermaid Live Editor](https://mermaid.live/) is a good tool for exploring the most popular type of diagrams.
+
 ## flowchart 
 
 Most of the diagrams I've written are flowchart diagrams. I can stretch visualize most of what I need.
@@ -23,6 +25,41 @@ flowchart TB
     C --> |No| D(Snooze)
     D --> |5 minutes<br/>pass| B
     E --> F(((End)))
+```
+
+## stateDiagram-v2
+
+See [State diagrams | Mermaid](https://mermaid.js.org/syntax/stateDiagram.html)
+
+``` text
+stateDiagram-v2
+    %% Node Defs
+    B : Alarm Goes Off
+    C : Ready to<br/>get up?
+    E : Get Up
+    D : Snooze
+    %% Relationships
+    [*] --> B : It is 6 AM
+    B --> C
+    C --> E : Yes
+    C --> D : No
+    D --> B : 5 minutes<br/>pass
+    E --> [*]
+```
+``` mermaid
+stateDiagram-v2
+    %% Node Defs
+    B : Alarm Goes Off
+    C : Ready to<br/>get up?
+    E : Get Up
+    D : Snooze
+    %% Relationships
+    [*] --> B : It is 6 AM
+    B --> C
+    C --> E : Yes
+    C --> D : No
+    D --> B : 5 minutes<br/>pass
+    E --> [*]
 ```
 
 ## sequenceDiagram
@@ -55,42 +92,6 @@ sequenceDiagram
   break Ready?
     me-->>Up: Get up
   end
-```
-## stateDiagram-v2
-
-
-See [State diagrams | Mermaid](https://mermaid.js.org/syntax/stateDiagram.html)
-
-
-``` text
-stateDiagram-v2
-    %% Node Defs
-    B : Alarm Goes Off
-    C : Ready to<br/>get up?
-    E : Get Up
-    D : Snooze
-    %% Relationships
-    [*] --> B : It is 6 AM
-    B --> C
-    C --> E : Yes
-    C --> D : No
-    D --> B : 5 minutes<br/>pass
-    E --> [*]
-```
-``` mermaid
-stateDiagram-v2
-    %% Node Defs
-    B : Alarm Goes Off
-    C : Ready to<br/>get up?
-    E : Get Up
-    D : Snooze
-    %% Relationships
-    [*] --> B : It is 6 AM
-    B --> C
-    C --> E : Yes
-    C --> D : No
-    D --> B : 5 minutes<br/>pass
-    E --> [*]
 ```
 ## erDiagram
 
@@ -167,7 +168,7 @@ classDiagram
     }
 ```
 
-
 ---
+Next [Shapes](shapes.md)
 
 Back to [main read md](readme.md).

@@ -89,4 +89,6 @@ sequenceDiagram
     me --) world:	Dotted line with a open arrow at the end (async)
 ```
 ---
+Next [Style](style.md)
+
 Back to [main read md](readme.md).
