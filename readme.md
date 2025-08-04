@@ -53,5 +53,5 @@ flowchart TD
     classDef trialClass fill:bisque,stroke:saddlebrown,stroke-width:2px,color:brown
     classDef finalClass fill:mediumpurple,stroke:indigo,stroke-width:2px,color:white
 
-    click E href "connectors.md"
+    click E href "https://github.com/jrcs3/Mermaid-Demo/connectors.md"
 ```
