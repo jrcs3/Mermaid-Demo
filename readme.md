@@ -25,7 +25,7 @@ config:
 ---
 flowchart TD
     %% Nodes with shapes
-    A(("Why Mermaid?<br/>(Pain Points)")):::startClass
+    A(("Why Mermaid?")):::startClass
     B{{"Compared<br/>to Visio"}}:::compareClass
     C(["Types of<br/>Diagrams"]):::typeClass
     D[/"Shapes"\]:::shapesClass
@@ -36,11 +36,11 @@ flowchart TD
  
     %% Flow
     A --> B
-    B -.-> |"Decision"| C
+    B --> C
     C --> D
-    D --> |"Visual"| E
+    D --> E
     E --> F
-    F -.-> |"Experiment"| G
+    F --> G
     G --> H
 
     %% Styling
@@ -53,5 +53,9 @@ flowchart TD
     classDef trialClass fill:bisque,stroke:saddlebrown,stroke-width:2px,color:brown
     classDef finalClass fill:mediumpurple,stroke:indigo,stroke-width:2px,color:white
 
+    click B href "https://github.com/jrcs3/Mermaid-Demo/blob/main/vs-visio.md"
+    click C href "https://github.com/jrcs3/Mermaid-Demo/blob/main/types-of-diagrams.md"
+    click D href "https://github.com/jrcs3/Mermaid-Demo/blob/main/shapes.md"
     click E href "https://github.com/jrcs3/Mermaid-Demo/blob/main/connectors.md"
+    click F href "https://github.com/jrcs3/Mermaid-Demo/blob/main/style.md"
 ```
