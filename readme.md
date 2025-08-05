@@ -11,7 +11,8 @@
 - [Shapes](shapes.md)
 - [Connectors](connectors.md)
 - [Styling](style.md)
-- [Trial &amp; Error](Trial-and-error.md)
+- [Trial &amp; Error](trial-and-error.md)
+- [List to Mermaid Example](list-to-mermaid-example.md)
 
 ---
 
@@ -29,9 +30,9 @@ flowchart TD
     C(["Types of Diagrams"]):::typeClass
     D[/"Shapes"\]:::shapesClass
     E(["Connectors"]):::connectClass
-    F(("Styling")):::stylingClass
+    F("Styling"):::stylingClass
     G{{"Trial & Error"}}:::trialClass
-    H["Resources & Live Demo"]:::finalClass
+    H["List to Mermaid Example"]:::finalClass
  
     %% Flow
     A --> B
@@ -57,4 +58,6 @@ flowchart TD
     click D href "https://github.com/jrcs3/Mermaid-Demo/blob/main/shapes.md"
     click E href "https://github.com/jrcs3/Mermaid-Demo/blob/main/connectors.md"
     click F href "https://github.com/jrcs3/Mermaid-Demo/blob/main/style.md"
+    click G href "https://github.com/jrcs3/Mermaid-Demo/blob/main/trial-and-error.md"
+    click H href "https://github.com/jrcs3/Mermaid-Demo/blob/main/list-to-mermaid-example.md"
 ```
