@@ -20,19 +20,18 @@
 ```mermaid
 ---
 config:
-  look: handDrawn
-  theme: neutral 2
+  theme: neutral
 ---
 flowchart TD
     %% Nodes with shapes
-    A(("Why Mermaid?")):::startClass
-    B{{"Compared<br/>to Visio"}}:::compareClass
-    C(["Types of<br/>Diagrams"]):::typeClass
+    A["Why Mermaid?"]:::startClass
+    B{{"Compared to Visio"}}:::compareClass
+    C(["Types of Diagrams"]):::typeClass
     D[/"Shapes"\]:::shapesClass
     E(["Connectors"]):::connectClass
     F(("Styling")):::stylingClass
     G{{"Trial & Error"}}:::trialClass
-    H["Resources &<br/>Live Demo"]:::finalClass
+    H["Resources & Live Demo"]:::finalClass
  
     %% Flow
     A --> B
