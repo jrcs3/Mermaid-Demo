@@ -11,7 +11,7 @@ graph TB
 
   %% Nodes
   subgraph sg[Sub Graph]
-  A(Aye)
+  A
   end
   B
 ```
@@ -25,7 +25,7 @@ graph TB
 
   %% Nodes
   subgraph sg[Sub Graph]
-  A(A-Team)
+  A
   end
   B
 ```

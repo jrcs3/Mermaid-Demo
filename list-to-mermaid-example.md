@@ -120,6 +120,53 @@ flowchart TB
 ```
 ## Bonus: Add a Legend
 Sometimes it is nice to see what the colors mean. Here ai put the legend in a subgraph. To avoid having the legend trample over the main graph, I put that in a subgraph and tried to hide it.
+```text
+flowchart LR
+
+    %% Relationships
+    DoSomething01 --> DoSomething02
+    DoSomething01 --> DoSomething03
+    DoSomething01 --> DoSomething04
+    DoSomething03 --> DoSomething05
+    DoSomething03 --> DoSomething06
+    DoSomething04 --> DoSomething08
+
+    %% Legend must be first to be at the bottom.
+    subgraph legend[**Legend**]
+        direction TB
+        lProgram[**Batch Program**<br/>Probably .NET]:::program
+        lSsis[**SSIS Package**]:::ssis
+        lCmd["**Shell command**<br/>(bat or ps1)"]:::cmd
+    end
+
+    %% Declarations
+    %% `&nbsp;` to hide the title (background and stroke are white to hide them too)
+    subgraph network[&nbsp;]
+        direction TB
+        DoSomething01[**DoSomething01**<br/>*FirstProcess.exe*]
+        DoSomething02[**DoSomething02**<br/>*AnotherProgram.exe*]
+        DoSomething03[**DoSomething03**<br/>*importStuff.dtsx*]
+        DoSomething04[**DoSomething04**<br/>*copystuff.bat*]
+        DoSomething05[**DoSomething05**<br/>*LaunchProgram.ps1*]
+        DoSomething06[**DoSomething06**<br/>*DoStuff.exe*]
+        DoSomething08[**DoSomething08**<br/>*ProcessCopiedStuff.exe*]
+    end
+
+    %% Classes
+    class DoSomething01,DoSomething02,DoSomething06,DoSomething08 program
+    class DoSomething03 ssis
+    class DoSomething04,DoSomething05 cmd
+
+    %% classDefs
+    classDef program fill:PaleGreen,color:green,stroke:green
+    classDef ssis fill:LightSteelBlue,color:SteelBlue,stroke:SteelBlue
+    classDef cmd fill:LightSkyBlue,color:darkgreen,stroke:DeepSkyBlue
+
+    %% sub graph styles
+    %% white on white to hide
+    style network fill:white, stroke:white
+    style legend fill:azure
+```
 ```mermaid
 flowchart LR
 
@@ -167,5 +214,11 @@ flowchart LR
     style network fill:white, stroke:white
     style legend fill:azure
 ```
+
+# Generating Mermaid in code
+
+See my [parse.project.assets](https://github.com/jrcs3/parse.project.assets) project on github for an example of a program that generates Mermaid diagrams in C#.
+
 ---
+
 Back to [main read md](readme.md).
