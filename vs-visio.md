@@ -2,13 +2,13 @@
 
 ## Visio
 ### The Good
-- GUI. Drag and drop, design serfice
-- Part of Office
-- Presise control
+- GUI. Drag and drop, design surface
+- Precise control
 - Reverse Engineer Database
 ### The Bad
 - Can only be embedded as images
 - Need fancy licensed software to edit
+- Needlessly complex
 
 ## Mermaid
 ### The Good

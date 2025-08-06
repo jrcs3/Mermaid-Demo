@@ -1,10 +1,14 @@
 # Trial and Error
 
+## Different levels of support
+
+Not all diagrams or features are avaible in all evironments. I have designed beautiful diagrams on [Mermaid Live Editor](https://mermaid.live/) only to discover that they wouldn't work on Azure DevOps WIKIs.
+
 ## Embed in WIKI
 
 Both Azure Devops and GitHub Markdown support embedding Mermaid, but they do it differently.
 
-If I was to embed this diagram
+If I was to embed this diagram in different eviromentss
 
 ``` text
 flowchart LR

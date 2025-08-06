@@ -60,7 +60,7 @@ graph TB
   
   %% Nodes
   %% subgraph does not support this
-  subgraph sg["Sub Graph (Hacked)"]
+  subgraph sg[Sub Graph]
   A:::AyeCD
   end
   B:::BeeCD
